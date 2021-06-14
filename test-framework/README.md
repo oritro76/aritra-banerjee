@@ -151,7 +151,7 @@ Run all tests
 pytest --alluredir=./test_results
 ```
 
-See test Reports
+See Test Reports
 ```
 allure serve ./test_results
 ```
