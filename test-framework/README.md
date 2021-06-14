@@ -103,7 +103,7 @@ will run to validate all the existing features of the APIs.
 * Returns healthcheck information about the system
     * Status code is 200
 
-### Getting Started
+## Getting Started
 
 #### Run Best Buy API Playground
 ```
