@@ -49,8 +49,6 @@ will run to validate all the existing features of the APIs.
 `-- requirements.txt             <- The requirements file for python environment
 ```
 
-// TODO: Generate data sets to test the validation of different parameters of the APIs.
-
 ## Test Cases
 
 > API endpoints:

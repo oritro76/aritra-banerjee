@@ -6,7 +6,6 @@ from clients.api_playground_client import ApiPlaygroundClient
 from response_json_schema.api_schema import *
 
 
-@pytest.mark.endtoendtest
 @pytest.mark.smoketest
 def test_create_service_api_returns_201_with_valid_json_schema(return_random_service):
     client = ApiPlaygroundClient()
@@ -87,7 +86,6 @@ def test_delete_service_api_return_200_with_valid_json_schema(return_random_serv
     assert_that(res['status_code']).is_equal_to(404)
 
 
-@pytest.mark.endtoendtest
 @pytest.mark.smoketest
 def test_fetch_services_api_returns_200_with_valid_json_schema():
     client = ApiPlaygroundClient()

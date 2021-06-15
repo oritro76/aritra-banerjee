@@ -6,7 +6,6 @@ from clients.api_playground_client import ApiPlaygroundClient
 from response_json_schema.api_schema import *
 
 
-@pytest.mark.endtoendtest
 @pytest.mark.smoketest
 def test_create_product_api_returns_201_with_valid_json_schema(return_random_product):
     client = ApiPlaygroundClient()
@@ -37,7 +36,6 @@ def test_create_product_api_returns_400_when_price_is_in_wrong_format(return_ran
     validate(res['json'], response_error_400)
 
 
-@pytest.mark.endtoendtest
 @pytest.mark.smoketest
 def test_fetch_product_api_with_product_id_return_200_with_valid_json_schema(return_random_product):
     client = ApiPlaygroundClient()
@@ -101,7 +99,6 @@ def test_delete_product_api_return_200_with_valid_json_schema(return_random_prod
     assert_that(res['status_code']).is_equal_to(404)
 
 
-@pytest.mark.endtoendtest
 @pytest.mark.smoketest
 def test_fetch_products_api_returns_200_with_valid_json_schema():
     client = ApiPlaygroundClient()
