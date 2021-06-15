@@ -111,6 +111,10 @@ npm install
 npm start
 # Best Buy API Playground started at http://localhost:3030
 ```
+#### Clone the repo
+```
+git clone https://github.com/oritro76/aritra-banerjee.git
+```
 
 #### Create vitual environment for the project
 ```commandline
